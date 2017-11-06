@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="462px"
+        android:layout_height="60px"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="156px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_year_left"
+                android:layout_width="46px"
+                android:layout_height="46px"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jcalendar_arrow_left" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2016"
+                android:textColor="#333339"
+                android:textSize="22px" />
+
+            <RelativeLayout
+                android:id="@+id/rl_year_right"
+                android:layout_width="46px"
+                android:layout_height="46px"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_year_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jcalendar_arrow_right" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="156px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_month_left"
+                android:layout_width="46px"
+                android:layout_height="46px"
+                android:gravity="center">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jcalendar_arrow_left" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="4月"
+                android:textColor="#333339"
+                android:textSize="22px" />
+
+            <RelativeLayout
+                android:id="@+id/rl_month_right"
+                android:layout_width="46px"
+                android:layout_height="46px"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_month_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jcalendar_arrow_right" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="462px"
+        android:layout_height="30px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5px"
+        android:paddingRight="5px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="#b4b4b4"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="#73737c"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="#73737c"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三"
+            android:textColor="#73737c"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="#73737c"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="#73737c"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="#b4b4b4"
+            android:textSize="14px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="13px"
+        android:layout_marginRight="25px"
+        android:background="#80e0e0e0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_days"
+        android:layout_width="462px"
+        android:layout_height="290px"
+      android:padding="5px" />
+
+</LinearLayout>
